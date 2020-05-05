@@ -101,7 +101,7 @@ class SceneClassDataset(torch.utils.data.Dataset):
                  samples_per_instance=2):
 
         self.samples_per_instance = samples_per_instance
-        self.instance_dirs = sorted(glob(os.path.join(root_dir, "*/")))
+        self.instance_dirs = sorted(glob('/content/drive/My Drive/SRNS Datasets /chairs/chairs_test/*'))
 
         assert (len(self.instance_dirs) != 0), "No objects in the data directory"
 
