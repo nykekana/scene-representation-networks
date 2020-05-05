@@ -77,7 +77,7 @@ def test():
 
     print("Loading model from %s" % opt.checkpoint_path)
     util.custom_load(model, path=opt.checkpoint_path, discriminator=None,
-                     overwrite_embeddings=False)
+                     overwrite_embeddings=True)
 
     model.eval()
     model.cuda()
